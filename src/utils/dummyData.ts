@@ -2,20 +2,12 @@ import type { BookmarkType } from "./types"
 
 export const sortingOptions = [
     {
-        name: 'alphabetically (asc)',
+        name: 'alpha-asc',
         value: 'alphabetically (asc)'
     },
     {
-        name: 'alphabetically (desc)',
+        name: 'alpha-desc',
         value: 'alphabetically (desc)'
-    },
-    {
-        name: 'date (asc)',
-        value: 'date (asc)'
-    },
-    {
-        name: 'date (desc)',
-        value: 'date (desc)'
     },
 ]
 

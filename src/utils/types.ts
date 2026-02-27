@@ -20,7 +20,7 @@ export interface DropdownProps {
     options?: DropdownOptionType[]
     visibility?: boolean
     getSelectedFn?: () => void
-    getOptionFn?: (value?: string) => void
+    getOptionFn?: (value?: DropdownOptionType) => void
 }
 
 export interface DropdownOptionType {
