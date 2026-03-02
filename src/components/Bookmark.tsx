@@ -28,7 +28,7 @@ const Bookmark = ({ title, domain, description, getTags, createdDate, logo, getP
             {/* creation data and pin */}
             <div className="flex items-center justify-between">
                 <p className="text-xs text-gray-600">{createdDate}</p>
-                <div onClick={getPinFn}>{pinned ? <TbPinnedFilled size={20} /> : <TbPinned size={20} />}</div>
+                <div className={`cursor-pointer hover:bg-gray-400 rounded-full p-2 ${pinned ? 'bg-gray-400' : 'bg-gray-100'}`} onClick={getPinFn}>{pinned ? <TbPinnedFilled size={20} /> : <TbPinned size={20} />}</div>
             </div>
         </div>
     )

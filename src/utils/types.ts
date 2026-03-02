@@ -13,6 +13,7 @@ export interface ButtonProps {
     buttonText?: string
     leadingIcon?: ReactNode
     bgColor?: string
+    getActionFn?: () => void
 }
 
 export interface DropdownProps {
@@ -27,6 +28,7 @@ export interface DropdownOptionType {
     name?: string
     value?: string
 }
+
 export interface BookmarkType {
     id?: number
     title?: string
@@ -50,6 +52,17 @@ export interface BookmarkProps {
     getPinFn?: () => void
     pinned?: boolean
 }
+
 export interface TagProps {
     name?: string
+}
+
+export interface ToastProps {
+    color?: string
+    message?: string
+}
+
+export interface OverlayProps {
+    children?: ReactNode
+    getActionFn?: () => void
 }

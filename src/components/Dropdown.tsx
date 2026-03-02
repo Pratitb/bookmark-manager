@@ -11,7 +11,7 @@ const Dropdown = ({ selectedValue, options, visibility, getSelectedFn, getOption
             </div>
             {/* OPTIONS */}
             {visibility ? <div className="absolute bg-white text-gray-500 w-full p-1 top-9 left-0 border-primary rounded-lg">
-                {options?.map(option => <p key={option?.value} onClick={() => getOptionFn?.(option?.value)} className="text-xs lowercase py-[6px] px-2 rounded-lg hover:bg-gray-800 hover:text-white">{option?.value}</p>)}
+                {options?.map(option => <p key={option?.value} onClick={() => getOptionFn?.(option)} className="text-xs lowercase py-[6px] px-2 rounded-lg hover:bg-gray-800 hover:text-white">{option?.name}</p>)}
             </div> : null}
         </div>
     )
